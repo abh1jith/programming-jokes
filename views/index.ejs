@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <center>
+            <%= setup %> <br>
+            <div id="delivery" style="display: none;"><b>Answer: </b> <%= delivery %> <br></div>
+                <button onclick="clickl()" id="btn">Get Answer</button>
+        </center>
+    </p>
+<script>
+    function clickl(){
+    if (document.getElementById("delivery").style.display === "none") {
+        document.getElementById("delivery").style.display = "";
+        document.getElementById("btn").style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
